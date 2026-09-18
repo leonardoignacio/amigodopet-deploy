@@ -15,7 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // Configuração do CORS - Libera o acesso para o ambiente de desenvolvimento do Vite
 app.use(cors({
-  origin: 'http://localhost:5173', // URL padrão do front-end React
+  origin: ['http://localhost:5173', 'https://leonardoignacio.github.io'], // URL padrão do front-end React
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }))
